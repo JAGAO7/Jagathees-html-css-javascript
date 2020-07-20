@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(3, 3, 61);
+  }
+  
+  h1 {
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .box{
+    width: 95%;
+    overflow: none; 
+    border-radius: 5px;
+  }
+
+  h2{
+    float: right;
+    position: relative;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    font-size: large;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-right: 10px;
+    letter-spacing: 2px;
+  }
+  
+  p{
+    height: auto;
+    margin: 8%;
+    color: black;
+    border: 3px solid whitesmoke;
+    width: 90%;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5%;
+    padding-top: 50px;
+    background-color: rgb(197, 192, 192);
+  }
+
+  .row{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  #s1{
+    background-color: darkred;
+  }
+  #s2{
+    color: white;
+    background-color: darkblue;
+  }
+  #s3{
+    background-color: darkgreen;
+  }
+
+  /********** LARGE DEVICE - DESKTOP **********/
+  
+  @media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+  }
+  
+  /********** MEDIUM DEVICE - TABLET **********/
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6,.col-md-12 {
+      float: left;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-12 {
+      margin-left: -10px;
+      width: 100%;
+    }
+    #s3{
+      margin-right: 65px;
+      width: 100px;
+    }
+  }
+  
+  /****** SMALL DEVICE - MOBILE ******/
+
+  @media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+    .content-name{
+      margin-right: 30px;
+    }
+  }
